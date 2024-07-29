@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        /* overflow-x: hidden; */
+        font-family: Helvetica, sans-serif;
+        background-color: white;
+    }
+
+
+    .conmain {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    *::selection{
+        color: white;
+        background-color: black;
+        
+    }
+    .container {
+        height: 400px;
+        width: 70%;
+        background-color: gray;
+        border-radius: 15px;
+        border-bottom-left-radius: 52px;
+        background-size: cover;
+        background-image: url(https://images.unsplash.com/photo-1620987278429-ab178d6eb547?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-position: center;
+
+    }
+
+    .side {
+        width: 29%;
+        border-radius: 15px;
+        height: 400px;
+        background-color: gray;
+        background-image: url(https://images.unsplash.com/photo-1621109246687-10ae613f2d8e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D);
+        background-size: 1;
+        background-position: center;
+    }
+
+    .btn {
+        height: 40px;
+        width: 40px;
+        border-radius: 50px;
+        background-color: rgb(29, 24, 24);
+        position: relative;
+        top: 363px;
+        left: -4px;
+        transition: ease-in-out 300ms;
+        box-shadow: 0 0 0 8px white;
+
+    }
+
+    .small {
+        height: 20px;
+        width: 20px;
+        background-color: transparent;
+        position: relative;
+        float: right;
+        top: 17px;
+        left: 28px;
+        border-bottom-left-radius: 11px;
+        box-shadow: -3px 8px 0 3px rgb(255, 255, 255);
+    }
+
+    .small2 {
+
+        box-shadow: -10px 5px 0 2px rgb(255, 255, 255);
+        height: 20px;
+        width: 20px;
+        background-color: transparent;
+        position: relative;
+        top: -28px;
+        left: 4px;
+        border-bottom-left-radius: 11px;
+    }
+
+    .btn:hover {
+        height: 40px;
+        width: 140px;
+        border-radius: 50px;
+        background-color: rgb(68, 59, 59);
+        transition: ease-in-out 300ms;
+    }
+
+    .btn:hover span {
+        color: white;
+        opacity: 1;
+        margin-left: 60px;
+        transition: ease-in-out 300ms;
+
+    }
+
+    span {
+        position: absolute;
+        color: white;
+        opacity: 0;
+        transition: ease-in-out 300ms;
+        margin-top: 8px;
+    }
+
+
+
+
+    .container1 {
+        /* height: 97vh; */
+        width: 90%;
+        margin: auto;
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        color: black;
+    }
+
+    h1 {
+        margin-top: 30px;
+    }
+
+    .profile {
+        height: 50px;
+        color: white;
+        border-radius: 444px;
+        width: 200px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        margin-top: 130px;
+    }
+
+    .profile_image {
+        height: 35px;
+        width: 35px;
+        background-color: gray;
+        border-radius: 333px;
+        margin-left: 10px;
+        background-image: url(Untitled-1-01.jpg);
+        background-size: 90px 90px;
+        background-position: -16px -18px;
+        background-repeat: no-repeat;
+    }
+
+    .profession {
+        color: rgb(167, 167, 167);
+        font-weight: 100;
+        font-size: 10px;
+    }
+
+    .name {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    .head p {
+        font-size: 14px;
+    }
+
+    .cursor {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        border: 1px solid rgb(255, 255, 255);
+        /* background-color: white; */
+        transition: .1s;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        mix-blend-mode: difference;
+    }
+    .cursor2{
+            position: fixed;
+            width: 8px;
+            height: 8px;
+            border-radius: 50px;
+            background-color: rgb(112, 112, 112);
+            transition:  .11s;
+            transform: translate(-50%,-50%);
+            pointer-events: none;
+            /* mix-blend-mode: difference; */
+        }
+
+    .head:hover~.cursor {
+        background-color: white;
+        width: 60px;
+        height: 60px;
+        transform: scale(2);
+    }
+    .head:hover ~.cursor2{
+            background-color: transparent;
+            transform: scale(2);
+        }
+</style>
+
+<body>
+
+    <div class="conmain">
+
+        <div class="container">
+            <div class="btn">
+                <span>view</span>
+                <div class="small"></div>
+                <div class="small2"></div>
+            </div>
+
+        </div>
+        <div class="side"></div>
+    </div>
+    <div class="container1">
+
+        <div class="info">
+            <div class="head">
+
+                <h1>Good presentation <br>principles</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ipsum magnam expedita <br> commodi
+                    dolorumsequi, iste odit fugiat dignissimos possimus!</p>
+            </div>
+            <div class="cursor"></div>
+            <div class="cursor2"></div>
+            <div class="profile">
+                <div class="profile_image"></div>
+                <div class="name">Shofique ahmmed rian
+                    <div class="profession">ux designer</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script>
+    const cursor = document.querySelector('.cursor');
+    const cursor2 = document.querySelector('.cursor2');
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = cursor2.style.left =  e.clientX + 'px';
+        cursor.style.top =cursor2.style.top =  e.clientY + 'px';
+    })
+</script>
+
+</html>
