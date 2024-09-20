@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .u{
+        border-radius: 8px;
+        border: 1px solid rgb(206, 206, 206);
+      }
+      form{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      button{
+        border-radius: 8px;
+        width: 100px;
+      }
+
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="/login" method="POST">
+        <input class="u" type="text" name="username" placeholder="Username" required>
+        <input class="u" type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="/register">Register here</a></p>
+</body>
+</html>
