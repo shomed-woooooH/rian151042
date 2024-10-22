@@ -1,1 +1,57 @@
-////
+{
+	// Place your snippets for c here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"boilerplate": {
+		"prefix": "boiler",
+		"body": [
+
+			
+"/*"
+"Author    : _Rian_"
+"Created on: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE    "
+"time: $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND",
+""
+""
+"█████╗"
+"██╔══██ "
+"██║  ╚═╝"
+"██║  ██╗"
+"╚█████╔╝"
+ "╚════"
+
+
+"*/"
+""
+			"#include <stdio.h>",
+			"#include <string.h>"
+			"int main(){"
+			''
+			""
+				"	return 0;"
+			"}",
+			
+		],
+		"description": "Log output to console"
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
